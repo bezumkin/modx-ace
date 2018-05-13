@@ -75,7 +75,10 @@ switch ($modx->event->name) {
     case 'OnChunkFormPrerender':
         $field = 'modx-chunk-snippet';
         if ($modx->controller->chunk && $modx->controller->chunk->isStatic()) {
-            $extension = pathinfo($modx->controller->chunk->getSourceFile(), PATHINFO_EXTENSION);
+            $extension = pathinfo($modx->controller->chunk->name, PATHINFO_EXTENSION);
+            if(!$extension||!isset($extensionMap[$extension])){
+                $extension = pathinfo($modx->controller->chunk->getSourceFile(), PATHINFO_EXTENSION);
+            }
             $mimeType = isset($extensionMap[$extension]) ? $extensionMap[$extension] : 'text/plain';
         } else {
             $mimeType = $html_elements_mime;
