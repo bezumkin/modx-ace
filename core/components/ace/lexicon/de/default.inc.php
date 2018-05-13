@@ -43,3 +43,5 @@ $_lang['setting_ace.snippets'] = 'Snippets';
 $_lang['setting_ace.snippets_desc'] = 'Code snippets expanded by “Tab”. Snippet example:<br /><br /><pre>\nsnippet getr\n	[!getResources? parents=`${1}`${2}]]\n</pre></br>You can insert “Tab” character by pressing Alt + 09';
 $_lang['setting_ace.height'] = 'Edit area height';
 $_lang['setting_ace.height_desc'] = 'Editor height in pixel unit. If left blank, a defaul height will be used.';
+$_lang['setting_ace.html_elements_mime'] = 'MIME-Typ für HTML-Elemente';
+$_lang['setting_ace.html_elements_mime_desc'] = 'Dieser Typ wird vom Editor für HTML-Elemente verwendet - Vorlagen, Chunks und Ressourcen mit HTML-Typ. Wenn nicht angegeben, wird der Standardtyp verwendet';

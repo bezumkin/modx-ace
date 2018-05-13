@@ -43,3 +43,5 @@ $_lang['setting_ace.snippets'] = 'Сниппеты';
 $_lang['setting_ace.snippets_desc'] = 'Сниппеты, разворачиваемые по клавише «Tab». Пример сниппета:<br /><br /><pre>\nsnippet getr\n	[!getResources? parents=`${1}`${2}]]\n</pre></br>Знак табуляции можно вставить используя клавиши Alt + 09';
 $_lang['setting_ace.height'] = 'Высота области редактирования';
 $_lang['setting_ace.height_desc'] = 'Высота редактора в пикселах. Если значение не указано, редактор будет иметь высоту по умолчанию.';
+$_lang['setting_ace.html_elements_mime'] = 'MIME-type для html элементов';
+$_lang['setting_ace.html_elements_mime_desc'] = 'Этот тип будет использован редактором для html элементов - шаблонов, чанков и ресурсов с типом html. Если не указан будет использован тип по умолчанию';
